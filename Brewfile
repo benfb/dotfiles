@@ -20,22 +20,18 @@ install wget --enable-iri
 # Install more recent versions of some OS X tools
 install vim --override-system-vi
 install homebrew/dupes/grep
-install josegonzalez/homebrew-php/php55
 
 # Install other useful binaries
 install ack
 install pv
 install git
 install lynx
-install node
 install rename
 install tree
 install cmus
 install gitsh
 install gnupg
 install rbenv
-
-install homebrew/versions/lua52
 
 # Remove outdated versions from the cellar
 cleanup

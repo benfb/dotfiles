@@ -116,8 +116,5 @@ alias reload="exec $SHELL -l"
 # Easily kill processes
 alias k9="kill -9"
 
-# Repeat previous command with `sudo`
-alias plz="sudo $(history -p !!)"
-
 # Easy node server
 alias nodemon="nodemon -e js,jade"

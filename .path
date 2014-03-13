@@ -8,4 +8,4 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # coreutils path
-export PATH="$(brew --prefix coreutils)/libexec/gnubin"
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
