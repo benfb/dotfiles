@@ -3,6 +3,9 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 
+# Easily disable/enable wi-fi
+alias wifi="networksetup -setairportpower en0"
+
 # Shortcuts
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
