@@ -123,7 +123,6 @@ func! WordProcessorMode()
   setlocal spell spelllang=en_us
   set complete+=s
   set formatprg=par
-  setlocal wrap linebreak nolist " soft wrap
   nnoremap \s ea<C-X><C-S>
   au BufRead *.md set ft= " disable syntax for markdown files
   noremap FP gqap  
