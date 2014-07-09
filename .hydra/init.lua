@@ -3,6 +3,7 @@ dofile(package.searchpath("update", package.path))
 dofile(package.searchpath("menuconf", package.path))
 dofile(package.searchpath("itunes", package.path))
 dofile(package.searchpath("rdio", package.path))
+dofile(package.searchpath("spotify", package.path))
 
 -- open hydra on startup
 autolaunch.set(true)
@@ -45,6 +46,12 @@ hotkey.bind(mash, 'DOWN', ext.rdio.pause)
 hotkey.bind(mash, 'LEFT', ext.rdio.previous)
 hotkey.bind(mash, 'RIGHT', ext.rdio.next)
 hotkey.bind(mash, '/', ext.rdio.currentTrack)
+
+hotkey.bind(bangers, 'UP', ext.spotify.play)
+hotkey.bind(bangers, 'DOWN', ext.spotify.pause)
+hotkey.bind(bangers, 'LEFT', ext.spotify.previous)
+hotkey.bind(bangers, 'RIGHT', ext.spotify.next)
+hotkey.bind(bangers, '/', ext.spotify.currentTrack)
 
 -- open or focus applications
 hotkey.bind({"ctrl"}, '3', function() application.launchorfocus("Firefox") end)
