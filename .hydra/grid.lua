@@ -116,3 +116,20 @@ end
 function ext.grid.resizewindow_taller()
   ext.grid.adjust_focused_window(function(f) f.y = f.y - 0; f.h = math.min(f.h + 1, ext.grid.GRIDHEIGHT - f.y) end)
 end
+
+-- move the window to the right half of the screen
+function ext.grid.resizewindow_righthalf()
+  local win = window.focusedwindow()
+  local newframe = win:screen():frame_without_dock_or_menu()
+  newframe.w = newframe.w / 2
+  newframe.x = newframe.w
+  win:setframe(newframe)
+end
+
+-- move the window to the left half of the screen
+function ext.grid.resizewindow_lefthalf()
+  local win = window.focusedwindow()
+  local newframe = win:screen():frame_without_dock_or_menu()
+  newframe.w = newframe.w / 2
+  win:setframe(newframe)
+end

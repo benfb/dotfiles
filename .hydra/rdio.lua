@@ -1,8 +1,6 @@
 -- Helper functions for controlling Rdio via AppleScript
 --
--- See also:
--- https://gist.github.com/rkumar/503162
--- http://dougscripts.com/rdio/itinfo/info01.php
+-- Based off of https://github.com/af/dotfiles/blob/master/hydra/itunes.lua
 ext.rdio = {}
 
 function ext.rdio.tell(cmd)
