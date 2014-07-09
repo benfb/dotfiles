@@ -32,8 +32,6 @@ function ext.rdio.currentTrack()
   hydra.alert(track .. '\n' .. album .. '\n' .. artist, 1.5);
 end
 
--- NOTE: shuffle API is broken in Rdio 11, so these bindings don't work.
--- See https://discussions.apple.com/message/22870402
 function ext.rdio.shuffle()
   ext.rdio.tell('set shuffle of current playlist to 1')
 end

@@ -52,6 +52,7 @@ hotkey.bind(bangers, 'DOWN', ext.spotify.pause)
 hotkey.bind(bangers, 'LEFT', ext.spotify.previous)
 hotkey.bind(bangers, 'RIGHT', ext.spotify.next)
 hotkey.bind(bangers, '/', ext.spotify.currentTrack)
+hotkey.bind(bangers, 'S', ext.spotify.shuffle)
 
 -- open or focus applications
 hotkey.bind({"ctrl"}, '3', function() application.launchorfocus("Firefox") end)

@@ -31,13 +31,3 @@ function ext.spotify.currentTrack()
   local track = ext.spotify.tell('get the name of the current track')
   hydra.alert(track .. '\n' .. album .. '\n' .. artist, 1.5);
 end
-
--- NOTE: shuffle API is broken in spotify 11, so these bindings don't work.
--- See https://discussions.apple.com/message/22870402
-function ext.spotify.shuffle()
-  ext.spotify.tell('set shuffle of current playlist to 1')
-end
-
-function ext.spotify.unshuffle()
-  ext.spotify.tell('set shuffle of current playlist to 0')
-end
