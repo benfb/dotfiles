@@ -29,6 +29,8 @@ function ext.rdio.currentTrack()
   local artist = ext.rdio.tell('get the artist of the current track')
   local album = ext.rdio.tell('get the album of the current track')
   local track = ext.rdio.tell('get the name of the current track')
+  local artwork = ext.rdio.tell('get the artwork of the current track')
   hydra.alert(track .. '\n' .. album .. '\n' .. artist, 1.5);
-  -- notify.show(track .. ' - ' .. artist, album, "", "") notification center notification
+  hydra.alert(artwork, 1.5);
+  -- notify.show(track .. ' - ' .. artist, album, '', '') -- notification center notification
 end

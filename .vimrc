@@ -23,6 +23,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'chriskempson/base16-vim'
 Plugin 'bling/vim-airline'
+Plugin 'goldfeld/vim-seek'
 
 call vundle#end()
 " ensure ftdetect et al work by including this after the Vundle stuff
