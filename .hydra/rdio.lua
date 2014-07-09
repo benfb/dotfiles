@@ -30,12 +30,5 @@ function ext.rdio.currentTrack()
   local album = ext.rdio.tell('get the album of the current track')
   local track = ext.rdio.tell('get the name of the current track')
   hydra.alert(track .. '\n' .. album .. '\n' .. artist, 1.5);
-end
-
-function ext.rdio.shuffle()
-  ext.rdio.tell('set shuffle of current playlist to 1')
-end
-
-function ext.rdio.unshuffle()
-  ext.rdio.tell('set shuffle of current playlist to 0')
+  -- notify.show(track .. ' - ' .. artist, album, "", "") notification center notification
 end
