@@ -54,8 +54,6 @@ hotkey.bind(bangers, 'LEFT', ext.spotify.previous)
 hotkey.bind(bangers, 'RIGHT', ext.spotify.next)
 hotkey.bind(bangers, '/', ext.spotify.currentTrack)
 
-hotkey.bind(mash, 'Q', ext.messages.currentTrack)
-
 -- open or focus applications
 hotkey.bind({"ctrl"}, '3', function() application.launchorfocus("Firefox") end)
 hotkey.bind({"ctrl"}, '4', function() application.launchorfocus("Microsoft Outlook") end)
