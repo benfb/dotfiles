@@ -115,6 +115,16 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
+" Fixing stupid shift key mistakes
+cab W! w!
+cab Q! q!
+cab Wq wq
+cab Wa wa
+cab wQ wq
+cab WQ wq
+cab W w
+cab Q q
+
 " Wordprocessor mode
 func! WordProcessorMode()
   setlocal formatoptions=t1
