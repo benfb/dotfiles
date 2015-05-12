@@ -104,3 +104,6 @@ alias k9="kill -9"
 
 # Easy node server
 alias nodemon="nodemon -e js,jade"
+
+# TheFuck command
+alias fuck='eval $(thefuck $(fc -ln -1))'
