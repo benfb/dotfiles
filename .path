@@ -1,5 +1,5 @@
 # local programs
-export PATH = "~/bin:$PATH"
+export PATH = "$HOME/bin:$PATH"
 
 # Homebrew
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
