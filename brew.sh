@@ -30,6 +30,7 @@ brew install tree
 brew install cmus
 brew install gitsh
 brew install gnupg
+brew tap homebrew/science
 brew install r
 
 # Remove outdated versions from the cellar
@@ -71,3 +72,6 @@ installcask electric-sheep
 installcask soleol
 installcask xquartz
 installcask rstudio
+
+brew tap caskroom/fonts
+installcask font-inconsolata
