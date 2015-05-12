@@ -21,9 +21,9 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
-Plugin 'chriskempson/base16-vim'
 Plugin 'bling/vim-airline'
 Plugin 'goldfeld/vim-seek'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 " ensure ftdetect et al work by including this after the Vundle stuff
@@ -96,14 +96,8 @@ inoremap jj <ESC>
 set hlsearch
 nmap <leader>hl :let @/ = ""<CR>
 
-" gui settings
-if (&t_Co == 256 || has('gui_running'))
-  if ($TERM_PROGRAM == 'iTerm.app')
-    colorscheme base16-ocean
-  else
-    colorscheme desert
-  endif
-endif
+colorscheme solarized
+set background=light
 
 " Disable arrow keys
 map <up> <nop>
@@ -124,24 +118,3 @@ cab wQ wq
 cab WQ wq
 cab W w
 cab Q q
-
-" Wordprocessor mode
-func! WordProcessorMode()
-  setlocal formatoptions=t1
-  setlocal noexpandtab
-  setlocal textwidth=80
-  map j gj
-  map k gk
-  setlocal spell spelllang=en_us
-  set complete+=s
-  set formatprg=par
-  nnoremap \s ea<C-X><C-S>
-  au BufRead *.md set ft= " disable syntax for markdown files
-  noremap FP gqap  
-  set foldcolumn=10
-  set columns=100
-  set nonumber
-  nnoremap <leader>w = gqip 
-  nnoremap <leader>hw = gggqG 
-endfu
-com! WP call WordProcessorMode()

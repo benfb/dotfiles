@@ -14,12 +14,11 @@ install findutils
 # Install Bash 4
 install bash
 
-# Install wget with IRI support
-install wget --enable-iri
+# Install wget
+install wget
 
 # Install more recent versions of some OS X tools
 install vim --override-system-vi
-install homebrew/dupes/grep
 
 # Install other useful binaries
 install ack
@@ -31,7 +30,7 @@ install tree
 install cmus
 install gitsh
 install gnupg
-install rbenv
+install r
 
 # Remove outdated versions from the cellar
 cleanup
