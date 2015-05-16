@@ -72,6 +72,7 @@ installcask electric-sheep
 installcask soleol
 installcask xquartz
 installcask rstudio
+installcask heroku-toolbox
 
 brew tap caskroom/fonts
 installcask font-inconsolata
