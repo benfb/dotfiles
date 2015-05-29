@@ -12,3 +12,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # coreutils path
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+
+# Go
+export PATH="$PATH:$GOPATH/bin"
