@@ -12,7 +12,7 @@ call vundle#begin()
 
 " install Vundle bundles
 Plugin 'airblade/vim-gitgutter'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/base16-vim'
 Plugin 'gmarik/vundle'
 Plugin 'kien/ctrlp.vim'
 Plugin 'pangloss/vim-javascript'
@@ -96,8 +96,9 @@ inoremap jj <ESC>
 set hlsearch
 nmap <leader>hl :let @/ = ""<CR>
 
-colorscheme solarized
-set background=light
+let base16colorspace=256
+colorscheme base16-atelierheath
+set background=dark
 
 " Disable arrow keys
 map <up> <nop>
@@ -108,6 +109,9 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
+" Use goimports for vim-go
+let g:go_fmt_command = "goimports"
 
 " Fixing stupid shift key mistakes
 cab W! w!
