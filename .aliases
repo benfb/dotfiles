@@ -107,3 +107,6 @@ alias nodemon="nodemon -e js,jade"
 
 # TheFuck command
 alias fuck='eval $(thefuck $(fc -ln -1))'
+
+# Use vi bindings for info
+alias info="info --vi-keys"

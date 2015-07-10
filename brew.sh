@@ -1,3 +1,17 @@
+#!/bin/bash
+
+brew_install() {
+  declare -r CMD="$1"
+  declare -r FORMULA="$2"
+  execute "brew $CMD install $FORMULA"
+}
+
+brew_tap() {
+  declare -r REPOSITORY="$1"
+
+  brew tap "$REPOSITORY" &> /dev/null
+}
+
 # Make sure we’re using the latest Homebrew
 brew update
 
@@ -62,13 +76,11 @@ installcask private-internet-access
 installcask lastfm
 installcask superduper
 installcask skim
-installcask origin
 installcask netlogo
 installcask the-unarchiver
 installcask flux
 installcask google-chrome
 installcask node
-installcask electric-sheep
 installcask soleol
 installcask xquartz
 installcask rstudio

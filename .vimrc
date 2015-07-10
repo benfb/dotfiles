@@ -23,6 +23,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-airline'
 Plugin 'goldfeld/vim-seek'
+Plugin 'valloric/youcompleteme'
 Plugin 'fatih/vim-go'
 
 call vundle#end()
