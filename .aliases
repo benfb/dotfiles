@@ -110,3 +110,6 @@ alias fuck='eval $(thefuck $(fc -ln -1))'
 
 # Use vi bindings for info
 alias info="info --vi-keys"
+
+# Easily get file permissions
+alias perm="stat -c '%A %a %n'"

@@ -5,6 +5,7 @@ export EDITOR="vim"
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
+
 # Make some commands not show up in history
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 
@@ -27,3 +28,11 @@ export DOCKER_HOST=tcp://localhost:2375
 # Plan9
 PLAN9=/usr/local/plan9 export PLAN9
 PATH=$PATH:$PLAN9/bin export PATH
+
+# Set git prompt variables
+export GIT_PS1_SHOWDIRTYSTATE="true"
+export GIT_PS1_SHOWUNTRACKEDFILES="true"
+export GIT_PS1_SHOWSTASHSTATE="true"
+export GIT_PS1_SHOWUPSTREAM="auto"
+export GIT_PS1_HIDE_IF_PWD_IGNORED="true"
+export GIT_PS1_SHOWCOLORHINTS="true"
