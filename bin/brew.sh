@@ -1,22 +1,18 @@
 #!/bin/bash
 
-brew_install() {
-  declare -r CMD="$1"
-  declare -r FORMULA="$2"
-  execute "brew $CMD install $FORMULA"
-}
+# Install command-line tools using Homebrew.
 
-brew_tap() {
-  declare -r REPOSITORY="$1"
+# Ask for the administrator password upfront.
+sudo -v
 
-  brew tap "$REPOSITORY" &> /dev/null
-}
+# Keep-alive: update existing `sudo` time stamp until the script has finished.
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Make sure we’re using the latest Homebrew
 brew update
 
 # Upgrade any already-installed formulae
-brew upgrade -all
+brew upgrade --all
 
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -26,64 +22,73 @@ brew install findutils
 # Install Bash 4
 brew install bash
 
-# Install wget
-brew install wget
-
-# Install more recent versions of some OS X tools
-brew install vim --override-system-vi
-
 # Install other useful binaries
 brew install ack
-brew install pv
-brew install git
-brew install rename
-brew install tree
+brew install cloc
 brew install cmus
+brew install elixir
+brew install git
 brew install gitsh
 brew install gnupg
+brew install jq
+brew install leiningen
+brew install pv
+brew install rename
+brew install sqlite
+brew install tree
+brew install vim --override-system-vi
+brew install wget --with-iri
+brew install youtube-dl
 
 # Remove outdated versions from the cellar
 brew cleanup
 
-# Install native apps
-brew install caskroom/cask/brew-cask
+# Install native opps
+brew tap caskroom/cask
 
 function installcask() {
 	brew cask install "${@}" 2> /dev/null
 }
 
-installcask 1password
-installcask atom
-installcask audacity
-installcask colloquy
-installcask daisydisk
-installcask dropbox
-installcask electrum
-installcask emacs
-installcask firefox
-installcask flux
-installcask google-chrome
-installcask gpgtools
-installcask iterm2
-installcask lighttable
-installcask mac-linux-usb-loader
-installcask netlogo
-installcask node
-installcask openemu
-installcask osxfuse
-installcask postgres
-installcask qlmarkdown
-installcask skim
-installcask soleol
-installcask soulseek
-installcask spotify
-installcask superduper
-installcask steam
-installcask the-unarchiver
-installcask thunderbird
-installcask torbrowser
-installcask transmission
-installcask virtualbox
-installcask vlc
-installcask xquartz
-installcask zotero
+declare -a apps=(
+  1password
+  atom
+  audacity
+  colloquy
+  daisydisk
+  dockertoolbox
+  dropbox
+  electrum
+  emacs
+  firefox
+  flux
+  google-chrome
+  gpgtools
+  iterm2
+  lighttable
+  mac-linux-usb-loader
+  netlogo
+  node
+  openemu
+  osxfuse
+  postgres
+  qlmarkdown
+  skim
+  soleol
+  soulseek
+  spotify
+  superduper
+  steam
+  the-unarchiver
+  thunderbird
+  torbrowser
+  transmission
+  virtualbox
+  vlc
+  xquartz
+  zotero
+)
+
+for app in "${apps[@]}" do
+    installcask "$app"
+done
