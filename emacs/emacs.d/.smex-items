@@ -1,0 +1,20 @@
+
+;; ----- smex-history -----
+(
+ calendar
+ package-install
+ ibuffer
+ load-theme
+ tetris
+ cd
+ 5x5
+)
+
+;; ----- smex-data -----
+(
+ (tetris . 1)
+ (load-theme . 4)
+ (calendar . 3)
+ (ibuffer . 1)
+ (package-install . 2)
+)
