@@ -21,10 +21,13 @@ export GREP_OPTIONS="--color=auto"
 
 # Set path for Go
 export GOPATH=$HOME/src/gocode
-export GOBIN=$GOPATH/bin
 
 # Set docker host
 export DOCKER_HOST=tcp://localhost:2375
+
+# Plan9
+PLAN9=/usr/local/plan9 export PLAN9
+PATH=$PATH:$PLAN9/bin export PATH
 
 # Set git prompt variables
 export GIT_PS1_SHOWDIRTYSTATE="true"

@@ -21,6 +21,8 @@ brew upgrade -all
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
+# Install some other useful utilities like `sponge`
+brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
 # Install Bash 4
@@ -36,11 +38,14 @@ brew install vim --override-system-vi
 brew install ack
 brew install pv
 brew install git
+brew install lynx
 brew install rename
 brew install tree
 brew install cmus
 brew install gitsh
 brew install gnupg
+brew tap homebrew/science
+brew install r
 
 # Remove outdated versions from the cellar
 brew cleanup
@@ -67,12 +72,19 @@ installcask thunderbird
 installcask gpgtools
 installcask osxfuse
 installcask vlc
+installcask private-internet-access
+installcask lastfm
 installcask superduper
 installcask skim
 installcask netlogo
 installcask the-unarchiver
+installcask flux
 installcask google-chrome
 installcask node
 installcask soleol
 installcask xquartz
+installcask rstudio
 installcask heroku-toolbelt
+
+brew tap caskroom/fonts
+installcask font-inconsolata

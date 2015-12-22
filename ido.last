@@ -1,0 +1,42 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/bbailey/ws/" . "oauth2_docker/")
+ ("/Users/bbailey/" . ".emacs.d/")
+ ("/Users/bbailey/.emacs.d/" . "customizations/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/bbailey/.emacs.d/"
+ "/Users/bbailey/ws/oauth2_docker/"
+ "/Users/bbailey/.emacs.d/customizations/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ "Dockerfile"
+ "navigation.el"
+ "vim.el"
+ "evil.el"
+ "editing.el"
+ "ui.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/bbailey/.emacs.d/" (22136 23297 0 0) "themes/" "places" "init.el" "ido.last" "elpa/" "customizations/" "backups/" "auto-save-list/" ".smex-items" ".recentf" ".gitignore" ".emacs~" ".emacs" ".DS_Store" "../" "./")
+
+ ("/Users/bbailey/ws/oauth2_docker/" (22136 9958 0 0) "Dockerfile" "../" "./")
+
+ ("/Users/bbailey/ws/" (22136 8903 0 0) "oauth2_docker/" "gdocker/" "../" "./")
+
+ ("/Users/bbailey/" (22136 22212 0 0) "ws/" "test.txt" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "gocode/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "bin/" "base16-atelierforest.dark.256.itermcolors" "ArubaVIA-VPNAgent" "Applications/" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".ssh/" ".locks/" ".iterm2_shell_integration.bash" ".emacs.d/" ".DS_Store" ".dropbox/" ".docker/" ".config/" ".CFUserTextEncoding" ".bash_profile" ".bash_history" ".account" "../" "./")
+
+ ("/Users/bbailey/.emacs.d/customizations/" (22136 19831 0 0) "vim.el" "ui.el" "shell-integration.el" "setup-clojure.el" "navigation.el" "misc.el" "elisp-editing.el" "editing.el" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
