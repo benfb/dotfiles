@@ -1,4 +1,0 @@
-;; These customizations make Emacs act more like Vim
-
-(require 'evil)
-(evil-mode 1)
