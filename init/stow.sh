@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-cd "$(dirname "${BASH_SOURCE}")";
+cd ..
 
-stow ../bash
-stow ../bin
-stow ../emacs
-stow ../git
-stow ../misc
-stow ../vim
+stow bash
+stow bin
+stow emacs
+stow git
+stow misc
+stow vim
