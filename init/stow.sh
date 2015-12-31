@@ -2,9 +2,9 @@
 
 cd $HOME/bin/dotfiles
 
-stow bash
+stow -t $HOME bash
 stow bin
-stow emacs
-stow git
-stow misc
-stow vim
+stow -t $HOME emacs
+stow -t $HOME git
+stow -t $HOME misc
+stow -t $HOME vim
