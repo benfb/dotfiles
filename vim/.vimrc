@@ -7,6 +7,7 @@ syntax enable
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'chriskempson/base16-vim'
+Plug 'reedes/vim-colors-pencil'
 Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-commentary'
@@ -46,9 +47,6 @@ set mouse=a
 
 " keyboard shortcuts
 let mapleader = ','
-nmap <leader>b :CtrlPBuffer<CR>
-nmap <leader>t :CtrlP<CR>
-nmap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nmap <leader>g :GitGutterToggle<CR>
 nmap <leader>p :set paste!<CR>
 map <silent> <leader>R :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
@@ -57,7 +55,6 @@ map <silent> <leader>R :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimr
 cmap w!! %!sudo tee > /dev/null %
 
 " plugin settings
-let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:gitgutter_enabled = 0
 let g:go_fmt_command = "goimports"
 
