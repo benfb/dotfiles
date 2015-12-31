@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd ..
+cd $HOME/bin/dotfiles
 
 stow bash
 stow bin
