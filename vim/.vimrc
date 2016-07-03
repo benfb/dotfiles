@@ -82,6 +82,7 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd! bufwritepost .vimrc source ~/.vimrc " reload vimrc after write
 set whichwrap+=<,>,h,l,[,] " Wrap arrow keys between lines
 set nocursorline " don't highlight current line
+set viminfo+=n~/.vim/viminfo " don't store .viminfo in home dir
 
 " keyboard shortcuts
 inoremap jj <ESC>

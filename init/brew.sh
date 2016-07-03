@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Install command-line tools using Homebrew.
+command -v brew > /dev/null 2>&1 || { echo >&2 "I require brew but it's not installed.  Aborting."; exit 1; }
 
 # Ask for the administrator password upfront.
 sudo -v
@@ -17,36 +18,35 @@ brew upgrade --all
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew install findutils
+
 # Install Bash 4
 brew install bash
+
 # Install Stow to sync dotfiles
 brew install stow
 
 # Install other useful binaries
-brew install ack
 brew install cloc
 brew install ccat
-brew install cmus
+# brew install cmus
 brew install elixir
 brew install git
 brew install gnupg
 brew install jq
 brew install leiningen
 brew install pv
-brew install rename
+# brew install rename
 brew install sqlite
 brew install tree
-brew install vim --override-system-vi
+brew install vim --with-override-system-vi
 brew install wget --with-iri
-brew install youtube-dl
+# brew install youtube-dl
 
 # Remove outdated versions from the cellar
 brew cleanup
 
 # Install native apps
-brew tap caskroom/cask
+# brew tap caskroom/cask
 
 function installcask() {
 	brew cask install "${@}" 2> /dev/null
@@ -58,7 +58,6 @@ declare -a apps=(
   audacity
   colloquy
   daisydisk
-  dockertoolbox
   dropbox
   electrum
   emacs
@@ -67,7 +66,6 @@ declare -a apps=(
   google-chrome
   gpgtools
   iterm2
-  lighttable
   mac-linux-usb-loader
   netlogo
   node
@@ -81,11 +79,9 @@ declare -a apps=(
   spotify
   superduper
   steam
-  the-unarchiver
   thunderbird
   torbrowser
   transmission
-  virtualbox
   vlc
   xquartz
   zotero
