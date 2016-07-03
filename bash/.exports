@@ -23,9 +23,6 @@ export GREP_OPTIONS="--color=auto"
 export GOPATH=$HOME/src/gocode
 export GOBIN=$GOPATH/bin
 
-# Set docker host
-export DOCKER_HOST=tcp://localhost:2375
-
 # Set git prompt variables
 export GIT_PS1_SHOWDIRTYSTATE="true"
 export GIT_PS1_SHOWUNTRACKEDFILES="true"

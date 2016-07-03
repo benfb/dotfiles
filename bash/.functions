@@ -83,3 +83,9 @@ function o() {
 		open "$@"
 	fi
 }
+
+# load docker-machine environment to run docker commands
+function dme() {
+    eval $(docker-machine env);
+    echo "docker-machine environment loaded"
+}

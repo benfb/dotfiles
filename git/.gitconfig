@@ -46,6 +46,12 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+	tool = vimdiff
+
+[pager]
+        log = diff-highlight | less
+        show = diff-highlight | less
+        diff = diff-highlight | less
 
 # URL shorthands
 [url "git@github.com:"]

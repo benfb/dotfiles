@@ -27,10 +27,10 @@ brew install stow
 # Install other useful binaries
 brew install ack
 brew install cloc
+brew install ccat
 brew install cmus
 brew install elixir
 brew install git
-brew install gitsh
 brew install gnupg
 brew install jq
 brew install leiningen
@@ -45,7 +45,7 @@ brew install youtube-dl
 # Remove outdated versions from the cellar
 brew cleanup
 
-# Install native opps
+# Install native apps
 brew tap caskroom/cask
 
 function installcask() {
@@ -91,6 +91,6 @@ declare -a apps=(
   zotero
 )
 
-for app in "${apps[@]}" do
-    installcask "$app"
-done
+# for app in "${apps[@]}" do
+#     installcask "$app"
+# done
