@@ -79,3 +79,6 @@ alias dcs="dcr rake spec"
 alias dcc="dcr rails console"
 alias dcl="docker-compose logs -f"
 alias dck="docker-compose kill"
+
+# Easily flush DNS cache
+alias flushdns="sudo killall -HUP mDNSResponder"

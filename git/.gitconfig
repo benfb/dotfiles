@@ -52,3 +52,7 @@
 [user]
 	name = Ben Bailey
 	email = bennettbailey@gmail.com
+	signingkey = CAB4A78025188ED9
+
+[commit]
+	gpgsign = true

@@ -16,8 +16,9 @@ export LC_ALL="en_US.UTF-8"
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
-# Don't send analytics to Homebrew
+# Improve Homebrew defaults
 export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto"
@@ -33,3 +34,9 @@ export GIT_PS1_SHOWSTASHSTATE="true"
 export GIT_PS1_SHOWUPSTREAM="auto"
 export GIT_PS1_HIDE_IF_PWD_IGNORED="true"
 export GIT_PS1_SHOWCOLORHINTS="true"
+
+# Make it easier to navigate to go projects
+export CDPATH=.:$GOPATH/src/github.com:$GOPATH/src/golang.org:$GOPATH/src
+
+# Enable true color for micro
+export MICRO_TRUECOLOR=1
