@@ -1,0 +1,26 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/ben/" . "Documents/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/ben/Documents/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "ds9.org"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/ben/Documents/" (23357 17204 929104 585000) ".ipynb_checkpoints/" "notes/" "books/" "ds9.org~" "hampshire/" "cabinet/" "Paradox Interactive/" "ds9.org" ".localized" "papers/" "archive/" "lasa/" ".DS_Store" "pingboard/" "reading/" "../" "./")
+
+ ("/Users/ben/" (23359 51010 923613 38000) "src/" ".lumo_history" ".fluentd-ui/" ".cmake/" ".avidemux/" ".glide/" ".taskrc" ".aliases" ".viminfo" ".bash_history" ".gvimrc" ".SoulseekQt/" ".gitconfig" ".aws/" ".inputrc" ".cache/" ".circleci/" ".python_history" "Downloads/" ".rediscli_history" ".Xauthority" ".bzr.log" ".gem/" ".pry_history" ".bash_profile" ".pylint-gui-history" ".m2/" ".spacemacs" ".fzf/" ".vscode/" ".mono/" ".ocamlinit" ".rstudio-desktop/" ".functions" ".babel.json" ".wtf/" ".ngrok2/" "Documents/" ".task/" ".terraform.d/" ".npm/" ".nrepl-history" ".draft/" ".jupyter/" ".overtone/" ".lbryum/" ".Snapshot/" ".Trash/" "Dropbox/" ".parallel/" ".gradle/" "Applications/" ".vimrc" "Movies/" ".ssh/" ".rustup/" ".prompt" ".ansible/" ".exports" "Soulseek Downloads/" ".RData" ".chunkwmrc" ".kube/" ".gitignore" ".ansible_galaxy" ".dropbox/" "Public/" ".matlab/" ".lein/" ".sqlite_history" ".helm/" ".bash_sessions/" ".parinfer-file-extensions.txt" "Sites/" ".cups/" ".dlv/" ".cargo/" ".octave_hist" ".node_repl_history" ".emacs.d/" ".minikube/" ".dnote/" ".skhdrc" ".oracle_jre_usage/" ".kwm/" ".erlang.cookie" ".lesshst" ".electron/" ".matplotlib/" "Library/" "Desktop/" ".solargraph/" ".ipython/" ".opam/" ".dialyxir_core_19_1.4.1.plt" ".next.d/" ".julia_history" ".gnome2/" ".elvish/" ".rnd" ".bundle/" ".nvm/" ".ipfs/" ".atom/" ".multirust/" ".extra" ".pylint.d/" ".irssi/" "Pictures/" ".psql_history" ".local/" ".boot/" ".skylight" ".mix/" ".elm/" ".nvimlog" ".heroics/" ".curlrc" ".bashrc" ".godot/" ".subversion/" ".netrc" ".vagrant.d/" ".rbenv/" "bin/" ".wget-hsts" ".path" ".CFUserTextEncoding" ".yarnrc" ".tmux.conf" ".electrum/" ".vault-token" ".gnupg/" ".oni/" ".R/" ".DS_Store" ".vim/" ".497918.padl" ".node-gyp/" ".heroku/" ".docker/" ".gemrc" ".osx" ".kodi/" "Music/" ".config/" ".hex/" ".Rhistory" ".dockercfg" ".s3cfg" ".packer.d/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

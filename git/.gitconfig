@@ -3,6 +3,9 @@
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 	# Clone a repository including all submodules
 	c = clone --recursive
+        # http://blog.amjith.com/git-open-a-small-git-hack
+        # https://github.com/larsks/git-tools/blob/master/git-resume
+        open = !vim `git-resume`
 
 [apply]
 	# Detect whitespace errors when applying a patch

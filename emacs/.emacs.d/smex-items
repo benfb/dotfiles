@@ -1,0 +1,18 @@
+
+;; ----- smex-history -----
+(
+ org-set-property
+ org-columns-quit
+ org-property-action
+ cd
+ 5x5
+ arp
+ dbx
+)
+
+;; ----- smex-data -----
+(
+ (org-property-action . 6)
+ (org-columns-quit . 1)
+ (org-set-property . 2)
+)
