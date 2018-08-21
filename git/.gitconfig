@@ -1,11 +1,15 @@
 [alias]
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+        # l = log --pretty=oneline -n 20 --graph --abbrev-commit
+        l = log --graph --abbrev-commit --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(dim white)%an%Creset'
 	# Clone a repository including all submodules
 	c = clone --recursive
-        # http://blog.amjith.com/git-open-a-small-git-hack
-        # https://github.com/larsks/git-tools/blob/master/git-resume
-        open = !vim `git-resume`
+        s = status
+        co = checkout
+        a = add
+        aa = add .
+        d = diff
+        d1 = diff HEAD~1
 
 [apply]
 	# Detect whitespace errors when applying a patch
@@ -55,7 +59,7 @@
 [user]
 	name = Ben Bailey
 	email = bennettbailey@gmail.com
-	signingkey = CAB4A78025188ED9
+        # signingkey = CAB4A78025188ED9
 
 [commit]
-	gpgsign = true
+        # gpgsign = true

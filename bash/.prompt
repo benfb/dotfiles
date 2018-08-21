@@ -1,22 +1,20 @@
 # Color codes
 Color_Off="\[\033[0m\]"
 Red="\[\033[0;31m\]"
-Green="\[\033[0;32m\]"
 
 function __prompt_command()
 {
-# capture the exit status of the last command
-EXIT="$?"
-PS1=""
+    # capture the exit status of the last command
+    EXIT="$?"
+    PS1=""
 
-if [ $EXIT -eq 0 ]; then PS1+="\[$Green\][\D{%I:%M}]\[$Color_Off\] "; else PS1+="\[$Red\][\D{%I:%M}]\[$Color_Off\] "; fi
-# if [ $EXIT -eq 0 ]; then PS1+="\[$Green\][\!]\[$Color_Off\] "; else PS1+="\[$Red\][\!]\[$Color_Off\] "; fi
+    if [ $EXIT -eq 0 ]; then PS1+="[\D{%I:%M}] "; else PS1+="\[$Red\][\D{%I:%M}]\[$Color_Off\] "; fi
 
-# basic information (user@host:path)
-PS1+="\u@\h:\w"
+    # basic information (user@host:path)
+    PS1+="\u@\h:\w"
 
-# prompt $ or # for root
-PS1+="\n\$ "
+    # prompt $ or # for root
+    PS1+="\n\$ "
 }
 PROMPT_COMMAND=__prompt_command
 

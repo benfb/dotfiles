@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ org-insert-drawer
+ org-trello-sync-buffer
+ org-trello-install-board-metadata
+ org-trello-install-key-and-token
+ deft
  org-set-property
- org-columns-quit
  org-property-action
- cd
- 5x5
- arp
- dbx
 )
 
 ;; ----- smex-data -----
@@ -15,4 +15,9 @@
  (org-property-action . 6)
  (org-columns-quit . 1)
  (org-set-property . 2)
+ (deft . 1)
+ (org-trello-install-key-and-token . 1)
+ (org-trello-install-board-metadata . 1)
+ (org-trello-sync-buffer . 1)
+ (org-insert-drawer . 1)
 )

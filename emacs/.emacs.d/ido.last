@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/ben/Documents/" . "archive/")
  ("/Users/ben/" . "Documents/")
 )
 
@@ -12,14 +13,19 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "media.org"
+ "trello.org"
+ "#media.org#"
  "ds9.org"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/ben/Documents/" (23359 64533 998963 761000) ".ipynb_checkpoints/" "notes/" "books/" "ds9.org~" "hampshire/" "cabinet/" "Paradox Interactive/" "ds9.org" ".localized" "papers/" "archive/" "lasa/" ".DS_Store" "pingboard/" "reading/" "../" "./")
+ ("/Users/ben/Documents/" (23419 8161 315922 315000) "budget.bank6/" "media.org" "#trello.org#" "notes/" "trello.org" "books/" "hampshire/" "cabinet/" "ds9.org" "#media.org#" ".localized" "papers/" "archive/" "lasa/" ".DS_Store" "pingboard/" "media.org~" "reading/" "../" "./")
 
- ("/Users/ben/" (23359 51010 923613 38000) "src/" ".lumo_history" ".fluentd-ui/" ".cmake/" ".avidemux/" ".glide/" ".taskrc" ".aliases" ".viminfo" ".bash_history" ".gvimrc" ".SoulseekQt/" ".gitconfig" ".aws/" ".inputrc" ".cache/" ".circleci/" ".python_history" "Downloads/" ".rediscli_history" ".Xauthority" ".bzr.log" ".gem/" ".pry_history" ".bash_profile" ".pylint-gui-history" ".m2/" ".spacemacs" ".fzf/" ".vscode/" ".mono/" ".ocamlinit" ".rstudio-desktop/" ".functions" ".babel.json" ".wtf/" ".ngrok2/" "Documents/" ".task/" ".terraform.d/" ".npm/" ".nrepl-history" ".draft/" ".jupyter/" ".overtone/" ".lbryum/" ".Snapshot/" ".Trash/" "Dropbox/" ".parallel/" ".gradle/" "Applications/" ".vimrc" "Movies/" ".ssh/" ".rustup/" ".prompt" ".ansible/" ".exports" "Soulseek Downloads/" ".RData" ".chunkwmrc" ".kube/" ".gitignore" ".ansible_galaxy" ".dropbox/" "Public/" ".matlab/" ".lein/" ".sqlite_history" ".helm/" ".bash_sessions/" ".parinfer-file-extensions.txt" "Sites/" ".cups/" ".dlv/" ".cargo/" ".octave_hist" ".node_repl_history" ".emacs.d/" ".minikube/" ".dnote/" ".skhdrc" ".oracle_jre_usage/" ".kwm/" ".erlang.cookie" ".lesshst" ".electron/" ".matplotlib/" "Library/" "Desktop/" ".solargraph/" ".ipython/" ".opam/" ".dialyxir_core_19_1.4.1.plt" ".next.d/" ".julia_history" ".gnome2/" ".elvish/" ".rnd" ".bundle/" ".nvm/" ".ipfs/" ".atom/" ".multirust/" ".extra" ".pylint.d/" ".irssi/" "Pictures/" ".psql_history" ".local/" ".boot/" ".skylight" ".mix/" ".elm/" ".nvimlog" ".heroics/" ".curlrc" ".bashrc" ".godot/" ".subversion/" ".netrc" ".vagrant.d/" ".rbenv/" "bin/" ".wget-hsts" ".path" ".CFUserTextEncoding" ".yarnrc" ".tmux.conf" ".electrum/" ".vault-token" ".gnupg/" ".oni/" ".R/" ".DS_Store" ".vim/" ".497918.padl" ".node-gyp/" ".heroku/" ".docker/" ".gemrc" ".osx" ".kodi/" "Music/" ".config/" ".hex/" ".Rhistory" ".dockercfg" ".s3cfg" ".packer.d/" "../" "./")
+ ("/Users/ben/" (23418 61645 184566 662000) "src/" ".aliases" ".viminfo" ".bash_history" ".SoulseekQt/" ".gitconfig" ".aws/" ".inputrc" "Downloads/" ".gem/" ".bash_profile" ".m2/" ".fzf/" ".vscode/" ".functions" "Documents/" ".terraform.d/" ".npm/" ".Trash/" ".profile" "Applications/" ".vimrc" "Movies/" ".ssh/" ".prompt" ".exports" "Soulseek Downloads/" "Public/" ".bash_sessions/" ".cups/" ".taskbook.json" ".emacs.d/" ".oracle_jre_usage/" "Library/" "Desktop/" ".solargraph/" ".bundle/" ".extra" "Pictures/" ".psql_history" ".irbrc" ".local/" ".boot/" ".mix/" ".bashrc" ".subversion/" ".netrc" ".rbenv/" "bin/" ".iterm2_shell_integration.bash" ".path" ".CFUserTextEncoding" ".yarnrc" ".tmux.conf" ".taskbook/" ".DS_Store" ".vim/" ".docker/" "Music/" ".config/" ".hex/" ".packer.d/" "../" "./")
+
+ ("/Users/ben/Documents/archive/" (23268 39511 0 0) "instagram/" "tumblr_stormyskies-blog (1).xml" "atmosphir/" "tumblr_stormyskies-blog.xml" "facebook/" "tweets/" "google/" ".DS_Store" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

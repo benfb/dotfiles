@@ -4,21 +4,17 @@
        (proto (if no-ssl "http" "https")))
   ;; Comment/uncomment these two lines to enable/disable MELPA and MELPA Stable as desired
   (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
-  ;;(add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
-  (when (< emacs-major-version 24)
-    ;; For important compatibility libraries like cl-lib
-    (add-to-list 'package-archives '("gnu" . (concat proto "://elpa.gnu.org/packages/")))))
+  (add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t))
 ;; Higher values are searched first.
 (setq package-archive-priorities
       '(("org"          . 200)
         ("melpa-stable" . 150)
         ("melpa"        . 100)
-        ("marmalade" . 75)
-        ("gnu"          .  50)))
+        ("marmalade" . 75)))
 (package-initialize)
 
 (defvar my-packages
-  '(auto-complete dracula-theme evil ido ivy smex undo-tree)
+  '(auto-complete deft dracula-theme evil ido ivy org-trello smex undo-tree)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
